@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Espila</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<title>Espila</title>
 
-    body{
-      background:#ffffff;
-      color:#555555;
-      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      text-align:center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
 
-    .container{
-      padding:20px;
-    }
+<style>
 
-    h1{
-      font-size:72px;
-      font-weight:300;
-      color:#8B6FAF;
-      letter-spacing:1px;
-      margin-bottom:18px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    p{
-      font-size:24px;
-      color:#777777;
-      margin-bottom:90px;
-      font-weight:300;
-    }
+body{
+background:#ffffff;
+font-family:'Nunito',sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
 
-    .footer{
-      font-size:14px;
-      color:#B0B0B0;
-      letter-spacing:0.5px;
-    }
+.container{
+text-align:center;
+}
 
-    @media (max-width:768px){
+.logo{
+font-size:78px;
+font-weight:800;
+color:#7B2CF5;
+line-height:1;
+letter-spacing:-1px;
+}
 
-      h1{
-        font-size:52px;
-      }
+.tagline{
+margin-top:18px;
+font-size:26px;
+font-weight:400;
+color:#666666;
+letter-spacing:.5px;
+}
 
-      p{
-        font-size:18px;
-        margin-bottom:70px;
-      }
+.footer{
+position:fixed;
+bottom:22px;
+left:0;
+right:0;
+text-align:center;
+font-size:12px;
+color:#9a9a9a;
+font-weight:400;
+}
 
-      .footer{
-        font-size:12px;
-      }
+@media(max-width:768px){
 
-    }
-  </style>
+.logo{
+font-size:62px;
+}
+
+.tagline{
+font-size:20px;
+margin-top:16px;
+}
+
+.footer{
+font-size:11px;
+bottom:16px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Espila</h1>
+<div class="logo">
+Espila
+</div>
 
-<p>Today, Tomorrow &amp; Beyond...</p>
+<div class="tagline">
+Today, Tomorrow &amp; Beyond...
+</div>
+
+</div>
 
 <div class="footer">
 © 2026 Espila. All Rights Reserved.
-</div>
-
 </div>
 
 </body>
