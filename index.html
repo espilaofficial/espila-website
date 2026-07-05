@@ -6,58 +6,83 @@
 
 <title>Espila</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
-
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-background:#ffffff;
-font-family:'Nunito',sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-overflow:hidden;
+    background:#ffffff;
+    font-family:"Segoe UI",Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
 }
 
 .container{
-text-align:center;
-padding:20px;
+    text-align:center;
+    padding:20px;
 }
 
 .logo{
-font-size:clamp(72px,9vw,110px);
-font-weight:800;
-color:#7B2CFB;
-letter-spacing:-2px;
-line-height:1;
+    font-size:110px;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:-3px;
+
+    background:linear-gradient(180deg,#8b2cff 0%,#6f00ff 55%,#5b00d6 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 2px 0 rgba(90,0,220,.12),
+        0 8px 18px rgba(111,0,255,.15);
 }
 
 .tagline{
-margin-top:14px;
-font-size:clamp(18px,2.3vw,30px);
-font-weight:500;
-color:#707070;
-letter-spacing:0.2px;
+    width:70%;
+    max-width:430px;
+    margin:14px auto 0;
+    font-size:27px;
+    font-weight:600;
+    color:#666666;
+    line-height:1.2;
 }
 
 .footer{
-position:fixed;
-bottom:20px;
-left:0;
-width:100%;
-text-align:center;
-font-size:11px;
-font-family:Helvetica,Arial,sans-serif;
-color:#B5B5B5;
+    position:fixed;
+    bottom:28px;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:16px;
+    color:#9a9a9a;
 }
 
+@media (max-width:768px){
+
+.logo{
+    font-size:82px;
+    letter-spacing:-2px;
+}
+
+.tagline{
+    width:58%;
+    max-width:210px;
+    font-size:17px;
+    margin-top:8px;
+}
+
+.footer{
+    font-size:12px;
+    bottom:18px;
+}
+
+}
 </style>
 
 </head>
