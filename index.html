@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ESPILA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espila</title>
 
-<style>
-body{
-    margin:0;
-    background:#ffffff;
-    font-family:Arial,Helvetica,sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
-}
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-h1{
-    font-size:64px;
-    letter-spacing:8px;
-    margin:0;
-}
+    body{
+      background:#ffffff;
+      color:#555555;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      text-align:center;
+    }
 
-p{
-    font-size:22px;
-    color:#666;
-    margin-top:20px;
-}
-</style>
+    .container{
+      padding:20px;
+    }
 
+    h1{
+      font-size:72px;
+      font-weight:300;
+      color:#8B6FAF;
+      letter-spacing:1px;
+      margin-bottom:18px;
+    }
+
+    p{
+      font-size:24px;
+      color:#777777;
+      margin-bottom:90px;
+      font-weight:300;
+    }
+
+    .footer{
+      font-size:14px;
+      color:#B0B0B0;
+      letter-spacing:0.5px;
+    }
+
+    @media (max-width:768px){
+
+      h1{
+        font-size:52px;
+      }
+
+      p{
+        font-size:18px;
+        margin-bottom:70px;
+      }
+
+      .footer{
+        font-size:12px;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
 
-<div>
-<h1>ESPILA</h1>
-<p>Today. Tomorrow. Beyond.</p>
-<p>Coming Soon.</p>
+<div class="container">
+
+<h1>Espila</h1>
+
+<p>Today, Tomorrow &amp; Beyond...</p>
+
+<div class="footer">
+© 2026 Espila. All Rights Reserved.
+</div>
+
 </div>
 
 </body>
