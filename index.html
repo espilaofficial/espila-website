@@ -3,107 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Espila</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-    background:#ffffff;
-    font-family:"Segoe UI",Arial,sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    overflow:hidden;
+  background:#fff;
+  font-family:'Nunito',sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
-
 .container{
-    text-align:center;
-    padding:20px;
+  width:100%;
+  text-align:center;
+  padding:24px;
 }
-
 .logo{
-    font-size:110px;
-    font-weight:800;
-    line-height:1;
-    letter-spacing:-3px;
-
-    background:linear-gradient(180deg,#8b2cff 0%,#6f00ff 55%,#5b00d6 100%);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-        0 2px 0 rgba(90,0,220,.12),
-        0 8px 18px rgba(111,0,255,.15);
+  display:inline-block;
+  font-size:72px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:-1.5px;
+  background:linear-gradient(180deg,#8E39FF 0%,#7B2CF5 55%,#6A18E8 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 8px 20px rgba(123,44,245,.12);
 }
-
 .tagline{
-    width:70%;
-    max-width:430px;
-    margin:14px auto 0;
-    font-size:27px;
-    font-weight:600;
-    color:#666666;
-    line-height:1.2;
+  margin:14px auto 0;
+  font-size:24px;
+  font-weight:400;
+  color:#666666;
+  white-space:nowrap;
+  display:inline-block;
+  transform:scale(.84);
+  transform-origin:center top;
 }
-
 .footer{
-    position:fixed;
-    bottom:28px;
-    left:0;
-    width:100%;
-    text-align:center;
-    font-size:16px;
-    color:#9a9a9a;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:22px;
+  text-align:center;
+  font-size:14px;
+  color:#B5B5B5;
 }
-
 @media (max-width:768px){
-
-.logo{
-    font-size:82px;
-    letter-spacing:-2px;
-}
-
+.logo{font-size:56px;}
 .tagline{
-    width:58%;
-    max-width:210px;
-    font-size:17px;
-    margin-top:8px;
+  font-size:20px;
+  margin-top:10px;
+  transform:scale(.82);
 }
-
-.footer{
-    font-size:12px;
-    bottom:18px;
-}
-
+.footer{font-size:11px;bottom:16px;}
 }
 </style>
-
 </head>
-
 <body>
-
 <div class="container">
-
-<div class="logo">
-Espila
+<div class="logo">Espila</div>
+<div class="tagline">Today, Tomorrow &amp; Beyond...</div>
 </div>
-
-<div class="tagline">
-Today, Tomorrow &amp; Beyond...
-</div>
-
-</div>
-
-<div class="footer">
-© 2026 Espila. All Rights Reserved.
-</div>
-
+<div class="footer">© 2026 Espila. All Rights Reserved.</div>
 </body>
 </html>
