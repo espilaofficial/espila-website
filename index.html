@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espila - Today, Tomorrow & Beyond...</title>
-    <!-- Google Fonts: Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
@@ -23,66 +22,75 @@
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Top to Bottom Perfect Centering */
-            align-items: center;    /* Left to Right Perfect Centering */
+            justify-content: center; /* Perfect Top-to-Bottom Centering */
+            align-items: center;    /* Perfect Left-to-Right Centering */
             overflow: hidden;
         }
 
-        /* Main Content Area (Logo + Tagline) */
+        /* Main Content Area */
         .main-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             padding: 20px;
+            width: 100%;
+            max-width: max-content; /* Keeps the container bound to the text width */
         }
 
-        /* Brand Title Style (Increased by 25% & Extra Bold) */
+        /* Brand Title Style (Massive and Extra Bold) */
         .brand-title {
             color: #7B2CF5; /* Royal Purple */
             font-weight: 900; /* Extra Bold */
-            line-height: 1.0;
-            margin-bottom: 12px;
+            line-height: 0.95;
+            margin-bottom: 16px;
+            letter-spacing: -1px; /* Slightly tight for that premium logo feel */
+            width: 100%;
         }
 
-        /* Tagline Style (Kept at your preferred original size) */
+        /* Tagline Style (Contained perfectly inside Espila with padding on sides) */
         .brand-tagline {
             color: #666666; /* Medium Gray */
             font-weight: 400; /* Regular */
+            width: 100%;
+            white-space: nowrap;
+            letter-spacing: 0.3px; /* Clean spacing */
         }
 
         /* Footer Copyright Area fixed at the absolute bottom */
         .footer {
             position: absolute;
-            bottom: 30px;
+            bottom: 35px;
             width: 100%;
             text-align: center;
             color: #B5B5B5; /* Light Gray */
             font-weight: 400;
         }
 
-        /* Typography sizing based on Desktop vs Mobile screens */
+        /* Responsive Typography Sizing */
         
         /* Desktop Screens */
         @media (min-width: 769px) {
             .brand-title {
-                font-size: 105px; /* Boosted up by 25% */
+                font-size: 130px; /* Grand desktop size */
             }
             .brand-tagline {
-                font-size: 24px; /* Original clean size */
+                font-size: 20px; /* Sized down to guarantee inward padding */
+                padding: 0 15px; /* Ensures space on Left and Right inside Espila's width */
             }
             .footer {
                 font-size: 14px;
             }
         }
 
-        /* Mobile Screens (Matches your 1000901487.jpg requirements) */
+        /* Mobile Screens (Matches your 1000901488.jpg requirements) */
         @media (max-width: 768px) {
             .brand-title {
-                font-size: 78px; /* Boosted up by 25% from 62px */
+                font-size: 96px; /* Significantly larger to overshadow the tagline */
             }
             .brand-tagline {
-                font-size: 20px; /* Kept at your preferred look */
+                font-size: 16px; /* Optimised so it sits comfortably inside the width */
+                padding: 0 12px; /* Leaves clear space on both Left and Right edges of Espila */
             }
             .footer {
                 font-size: 11px;
@@ -92,13 +100,11 @@
 </head>
 <body>
 
-    <!-- Center Content -->
     <div class="main-content">
         <h1 class="brand-title">Espila</h1>
         <p class="brand-tagline">Today, Tomorrow & Beyond...</p>
     </div>
 
-    <!-- Footer Content -->
     <footer class="footer">
         &copy; 2026 Espila. All Rights Reserved.
     </footer>
