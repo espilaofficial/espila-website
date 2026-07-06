@@ -1,71 +1,455 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Espila</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  background:#fff;
-  font-family:'Nunito',sans-serif;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.container{
-  width:100%;
-  text-align:center;
-  padding:24px;
-}
-.logo{
-  display:inline-block;
-  font-size:72px;
-  font-weight:700;
-  line-height:1;
-  letter-spacing:-1.5px;
-  background:linear-gradient(180deg,#8E39FF 0%,#7B2CF5 55%,#6A18E8 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  text-shadow:0 8px 20px rgba(123,44,245,.12);
-}
-.tagline{
-  margin:14px auto 0;
-  font-size:24px;
-  font-weight:400;
-  color:#666666;
-  white-space:nowrap;
-  display:inline-block;
-  transform:scale(.84);
-  transform-origin:center top;
-}
-.footer{
-  position:fixed;
-  left:0;
-  right:0;
-  bottom:22px;
-  text-align:center;
-  font-size:14px;
-  color:#B5B5B5;
-}
-@media (max-width:768px){
-.logo{font-size:56px;}
-.tagline{
-  font-size:20px;
-  margin-top:10px;
-  transform:scale(.82);
-}
-.footer{font-size:11px;bottom:16px;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espila Brand Identity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f5f5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main Card Container */
+        .card-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 24px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            border: 1px solid #e1e1e6;
+            position: relative;
+        }
+
+        /* Top Bar Navigation */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .back-arrow {
+            color: #7B2CF5;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .action-icons {
+            display: flex;
+            gap: 25px;
+        }
+
+        .icon-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            color: #7B2CF5;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .icon-group i {
+            font-size: 22px;
+        }
+
+        /* Header Section */
+        .header-section {
+            margin-bottom: 20px;
+        }
+
+        .brand-title {
+            font-size: 72px;
+            font-weight: 700;
+            color: #7B2CF5;
+            line-height: 1.1;
+        }
+
+        .brand-tagline {
+            font-size: 24px;
+            font-weight: 400;
+            color: #666666;
+            margin-top: 5px;
+        }
+
+        /* Dividers */
+        .divider {
+            height: 1px;
+            background-color: #B5B5B5;
+            opacity: 0.5;
+            margin: 20px 0;
+        }
+
+        /* Two Column Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Left Column Details */
+        .details-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .detail-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .item-icon {
+            background-color: #7B2CF5;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .item-text {
+            font-size: 15px;
+            color: #666666;
+            line-height: 1.4;
+        }
+
+        .item-text strong {
+            color: #7B2CF5;
+            font-weight: 700;
+        }
+
+        /* Right Column Details */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #7B2CF5;
+            margin-bottom: 15px;
+        }
+
+        /* Colors Sub-section */
+        .colors-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .color-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+            color: #666666;
+        }
+
+        .color-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .color-box {
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+        }
+
+        .color-purple { background-color: #7B2CF5; }
+        .color-gray { background-color: #666666; }
+        .color-light-gray { background-color: #B5B5B5; }
+
+        .color-hex {
+            font-weight: 400;
+        }
+
+        /* Font Sizes Table Sub-section */
+        .sizes-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        .sizes-table th, .sizes-table td {
+            text-align: left;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+
+        .sizes-table th {
+            color: #7B2CF5;
+            font-weight: 700;
+        }
+
+        .sizes-table th.right-align, .sizes-table td.right-align {
+            text-align: right;
+        }
+
+        .sizes-table td {
+            color: #666666;
+        }
+
+        .sizes-table tr td:first-child {
+            font-weight: 700;
+            color: #666666;
+        }
+
+        /* Brand Style Sub-section */
+        .brand-style-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .brand-style-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #7B2CF5;
+            min-width: 120px;
+        }
+
+        .brand-style-tags {
+            font-size: 15px;
+            color: #666666;
+            line-height: 1.4;
+        }
+
+        /* Footer Section */
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            color: #666666;
+            margin-top: 40px;
+        }
+
+        .footer-divider {
+            color: #B5B5B5;
+        }
+
+        /* Responsive Design for Mobile Layout */
+        @media (max-width: 768px) {
+            .card-container {
+                padding: 20px;
+            }
+
+            .brand-title {
+                font-size: 56px;
+            }
+
+            .brand-tagline {
+                font-size: 20px;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .sizes-table td, .sizes-table th {
+                font-size: 14px;
+            }
+
+            /* Showing mobile sizes logic via custom text if needed, but CSS handles responsiveness */
+            .desktop-size-val { display: none; }
+            .mobile-size-val { display: inline; }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-<div class="logo">Espila</div>
-<div class="tagline">Today, Tomorrow &amp; Beyond...</div>
-</div>
-<div class="footer">© 2026 Espila. All Rights Reserved.</div>
+
+    <div class="card-container">
+        <div class="top-bar">
+            <div class="back-arrow">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="action-icons">
+                <div class="icon-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Mail</span>
+                </div>
+                <div class="icon-group">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span>Share</span>
+                </div>
+                <div class="icon-group">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <span>Edit</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-section">
+            <div class="brand-title">Espila</div>
+            <div class="brand-tagline">Today, Tomorrow & Beyond...</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="main-content">
+            
+            <div class="details-list">
+                <div class="detail-item">
+                    <div class="item-icon"><i class="fa-solid fa-tag"></i></div>
+                    <div class="item-text">
+                        <strong>Brand Name:</strong> Espila<br>
+                        E = Capital, spila = Small
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="item-icon"><i class="fa-regular fa-comment-dots"></i></div>
+                    <div class="item-text">
+                        <strong>Tagline:</strong> Today, Tomorrow & Beyond...<br>
+                        (After Today, Comma ,<br>
+                        After Tomorrow, Ampersand &<br>
+                        After Beyond, Three Dots ...)
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="item-icon">A</div>
+                    <div class="item-text">
+                        <strong>Font:</strong> Nunito<br>
+                        (Option No. 5)
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="item-icon">T</div>
+                    <div class="item-text">
+                        <strong>Font Weights:</strong><br>
+                        Espila: Bold (700)<br>
+                        Tagline & Copyright: Regular (400)
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="item-icon"><i class="fa-solid fa-list-ul"></i></div>
+                    <div class="item-text">
+                        <strong>Layout:</strong> Center Aligned<br>
+                        Logo → Tagline → Copyright<br>
+                        (Bottom Center)
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section-title">Colors</div>
+                <div class="colors-list">
+                    <div class="color-item">
+                        <div class="color-left">
+                            <div class="color-box color-purple"></div>
+                            <span>Brand Color (Royal Purple)</span>
+                        </div>
+                        <span class="color-hex">#7B2CF5</span>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-left">
+                            <div class="color-box color-gray"></div>
+                            <span>Tagline Color (Medium Gray)</span>
+                        </div>
+                        <span class="color-hex">#666666</span>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-left">
+                            <div class="color-box color-light-gray"></div>
+                            <span>Copyright Color (Light Gray)</span>
+                        </div>
+                        <span class="color-hex">#B5B5B5</span>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section-title" style="margin-top: 5px;">Font Sizes</div>
+                <table class="sizes-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="right-align">Desktop</th>
+                            <th class="right-align">Mobile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Espila</td>
+                            <td class="right-align">72px</td>
+                            <td class="right-align">56px</td>
+                        </tr>
+                        <tr>
+                            <td>Tagline</td>
+                            <td class="right-align">24px</td>
+                            <td class="right-align">20px</td>
+                        </tr>
+                        <tr>
+                            <td>Copyright</td>
+                            <td class="right-align">14px</td>
+                            <td class="right-align">11px</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="divider"></div>
+
+                <div class="brand-style-section">
+                    <div class="brand-style-title">
+                        <i class="fa- solid fa-wand-magic-sparkles" style="color: #7B2CF5;"></i>
+                        <span>Brand Style</span>
+                    </div>
+                    <div class="brand-style-tags">
+                        Minimal • Elegant • Premium • Clean<br>
+                        Modern • Timeless
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="divider" style="margin-top: 40px;"></div>
+
+        <div class="footer">
+            <span>ESPILA Brand Identity v1.0</span>
+            <span class="footer-divider">|</span>
+            <span>Date: 05 July 2026</span>
+        </div>
+
+    </div>
+
 </body>
 </html>
