@@ -6,7 +6,7 @@
     <title>Espila - Today, Tomorrow & Beyond...</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
     
     <style>
         /* Reset and Base Styles */
@@ -27,7 +27,7 @@
             overflow: hidden;
         }
 
-        /* Container to keep things structured */
+        /* Container */
         .wrapper {
             display: flex;
             flex-direction: column;
@@ -35,36 +35,38 @@
             align-items: center;
             width: 100%;
             height: 100%;
-            padding: 40px 20px; /* Padding for nice spacing */
+            padding: 40px 20px;
         }
 
-        /* Empty top section to balance the vertical centering like the screenshot */
         .top-space {
             flex: 1;
         }
 
-        /* Main Content Area (Logo + Tagline) */
+        /* Main Content Area */
         .main-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            flex: 2; /* Gives more weight to center it properly */
+            flex: 2;
             justify-content: center;
         }
 
-        /* Brand Title Style */
+        /* Brand Title Style (Made Extra Bold with 900 weight) */
         .brand-title {
             color: #7B2CF5; /* Royal Purple */
-            font-weight: 700; /* Bold */
-            line-height: 1.1;
-            margin-bottom: 15px;
+            font-weight: 900; /* Extra Bold / Black */
+            line-height: 1.0;
+            margin-bottom: 12px;
+            letter-style: normal;
         }
 
-        /* Tagline Style */
+        /* Tagline Style (Sized down to fit inside the Espila width) */
         .brand-tagline {
             color: #666666; /* Medium Gray */
             font-weight: 400; /* Regular */
+            width: 100%;
+            max-width: max-content;
         }
 
         /* Footer Copyright Area */
@@ -72,32 +74,34 @@
             width: 100%;
             text-align: center;
             color: #B5B5B5; /* Light Gray */
-            font-weight: 400; /* Regular */
+            font-weight: 400;
             padding-bottom: 10px;
         }
 
-        /* Typography sizing based on your Style Guide (Desktop vs Mobile) */
+        /* Responsive Typography Sizing */
         
-        /* Desktop Screens (Default) */
+        /* Desktop Screens */
         @media (min-width: 769px) {
             .brand-title {
-                font-size: 72px;
+                font-size: 84px; /* Slightly increased to give more presence */
             }
             .brand-tagline {
-                font-size: 24px;
+                font-size: 18px; /* Reduced from 24px to keep it contained */
+                letter-spacing: 0.5px;
             }
             .footer {
                 font-size: 14px;
             }
         }
 
-        /* Mobile Screens (Matches your exact screenshot) */
+        /* Mobile Screens */
         @media (max-width: 768px) {
             .brand-title {
-                font-size: 56px;
+                font-size: 62px; /* Slightly increased for better weight */
             }
             .brand-tagline {
-                font-size: 20px;
+                font-size: 14px; /* Reduced from 20px to perfectly fit underneath */
+                letter-spacing: 0.2px;
             }
             .footer {
                 font-size: 11px;
